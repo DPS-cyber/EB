@@ -251,14 +251,14 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999; /* above everything */
-  background: rgba(255, 255, 255, 0.8); /* optional: light background to make it stand out */
+  background: rgba(255, 255, 255, 0.0); /* optional: light background to make it stand out */
   padding: 20px; /* optional */
   border-radius: 12px; /* optional */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.0); /* optional */
 }
 
 .centered-logo img {
-  max-width: 300px; /* adjust size as needed */
+  max-width: 150px; /* adjust size as needed */
   height: auto;
   display: block;
 }
