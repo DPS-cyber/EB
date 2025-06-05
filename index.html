@@ -27,12 +27,17 @@
     <div class="info-panel">
       <div id="location-time">Loading time...</div>
       <div id="weather">Fetching weather...</div>
+      
       <!-- Focus Audio (inside overlay) -->
       <audio id="focus-audio" autoplay loop muted>
   <source src="https://github.com/DPS-cyber/EB/releases/download/v.1/Binaural-Beats-40hz.mp3" type="audio/mpeg" />
   Your browser does not support the audio element.
 </audio>
 
+<!-- Centered Logo -->
+<div class="centered-logo">
+  <img src="edubot.png" alt="EduBot Logo" />
+</div>
 
 
       <!-- Audio Control Buttons -->
@@ -49,7 +54,6 @@
     <!-- Chatbot -->
     <div class="chat-container">
       <div id="chat-box"></div>
-      <img src="EduBot.png" alt="EduBot" class="chat-logo" />
       <input type="text" id="user-input" placeholder="Say something..." />
       <button onclick="sendMessage()">
       <i class="fas fa-paper-plane"></i> 
