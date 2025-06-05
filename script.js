@@ -233,9 +233,9 @@ const audio = document.getElementById('focus-audio');
 const audioBtn = document.getElementById('audio-btn');
 
 const audioTracks = [
-  "Binaural-Beats-40hz.mp3",
-  "electra.mp3",
-  "lofi.mp3"
+ "https://github.com/DPS-cyber/EB/releases/download/v.1/Binaural-Beats-40hz.mp3",
+  "https://github.com/DPS-cyber/EB/releases/download/v.1/electra.mp3",
+  "https://github.com/DPS-cyber/EB/releases/download/v.1/lofi.mp3"
 ];
 
 let currentIndex = 0;
