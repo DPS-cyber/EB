@@ -45,10 +45,13 @@ EduBot is a simple web-based educational assistant built with HTML, JavaScript, 
 | improve study habits                           |                                                                                                            |
 
 | study motivation                              | **Study Videos:**<br>1. [Neuroscience with Andrew Huberman](https://youtu.be/Ffh_6VkO0W8)<br>*Many more but no data available* |
-| AI tools to study                              | **Popular AI Study Tools:**<br>- 🧠 [Quizlet](https://quizlet.com) — AI flashcards and study sets<br>- ✍️ [Grammarly](https://grammarly.com) — AI writing assistant<br>- 📚 [Socratic by Google](https://socratic.org) — AI problem solver<br>- 📖 [ChatGPT](https://chat.openai.com) — AI study buddy for explanations<br><br>These are some of the most popular tools! |
-| best AI tools for studying                     | **Popular AI Study Tools:**<br>- 🧠 [Quizlet](https://quizlet.com) — AI flashcards and study sets<br>- ✍️ [Grammarly](https://grammarly.com) — AI writing assistant<br>- 📚 [Socratic by Google](https://socratic.org) — AI problem solver<br>- 📖 [ChatGPT](https://chat.openai.com) — AI study buddy for explanations<br><br>These are some of the most popular tools! |
-| study tools using AI                           | **Popular AI Study Tools:**<br>- 🧠 [Quizlet](https://quizlet.com) — AI flashcards and study sets<br>- ✍️ [Grammarly](https://grammarly.com) — AI writing assistant<br>- 📚 [Socratic by Google](https://socratic.org) — AI problem solver<br>- 📖 [ChatGPT](https://chat.openai.com) — AI study buddy for explanations<br><br>These are some of the most popular tools! |
 
+| Trigger                        |  Phrase                         |
+|--------------------------------|---------------------------------|
+| ai tools to study              | -🧠 <a href="https://quizlet.com" target="_blank">Quizlet</a> — AI flashcards and study sets<br>  |
+| best ai tools for studying     | - ✍️ <a href="https://grammarly.com" target="_blank">Grammarly</a> — AI writing assistant<br>   |
+| study tools using ai           | - 📚 <a href="https://socratic.org" target="_blank">Socratic by Google</a> — AI problem solver<br>       |
+|                                | - 📖 <a href="https://chat.openai.com" target="_blank">ChatGPT</a> — AI study buddy for explanations<br>   |
 ---
 
 *You may change predefined questions and their answers if you want to.*
