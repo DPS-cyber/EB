@@ -176,6 +176,8 @@ function sendMessage() {
       - <a href="https://www.youtube.com/@ExpHub" target="_blank">Prashant Kirad (Science)</a><br>
       - <a href="https://www.youtube.com/@MathsByShobhitNirwan" target="_blank">Shobit Nirwan (Math)</a><br>
       - <a href="https://www.youtube.com/@DigrajSinghRajput214" target="_blank">Digraj Singh (SST)</a>
+      "many more but no data,here's database:
+       <a href="https://github.com/DPS-cyber/EB" target="_blank">Github repo</a>
     `;
   }
   else if (
@@ -195,7 +197,8 @@ function sendMessage() {
     replyHTML = `
       <b>Study Videos:</b><br>
       1. <a href="https://youtu.be/Ffh_6VkO0W8" target="_blank">Neuroscience with Andrew Huberman</a><br>
-      "many more but no data"
+      "many more but no data,here's database:
+       <a href="https://github.com/DPS-cyber/EB" target="_blank">Github repo</a>
     `;
   }
 else if (
@@ -210,6 +213,8 @@ else if (
     - 📚 <a href="https://socratic.org" target="_blank">Socratic by Google</a> — AI problem solver<br>
     - 📖 <a href="https://chat.openai.com" target="_blank">ChatGPT</a> — AI study buddy for explanations<br><br>
     These are some of the most popular tools!
+    "many more but no data,here's database:
+       <a href="https://github.com/DPS-cyber/EB" target="_blank">Github repo</a>
   `;
 }
 
