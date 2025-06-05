@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Productivity Web App</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN (for icons if needed) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="background.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Overlay Content -->
+  <div class="overlay">
+    <div class="info-panel">
+      <div id="location-time">Loading time...</div>
+      <div id="weather">Fetching weather...</div>
+      <!-- Focus Audio (inside overlay) -->
+      <audio id="focus-audio" autoplay loop muted>
+      <source src="Binaural-Beats-40hz.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+    </audio>
+
+
+      <!-- Audio Control Buttons -->
+      <div class="button-container">
+        <button id="audio-btn" onclick="toggleAudio()" title="Toggle Mute/Unmute">
+          <i class="fas fa-volume-up"></i> 
+        </button>
+        <button id="audio-switch-btn" onclick="switchAudio()" title="Switch Focus Audio">
+          <i class="fas fa-random"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chat-container">
+      <div id="chat-box"></div>
+      <input type="text" id="user-input" placeholder="Say something..." />
+      <button onclick="sendMessage()">
+      <i class="fas fa-paper-plane"></i> 
+      </button>
+    </div>
+
+    <!-- Notepad -->
+    <div class="notepad-container">
+      <h3>🎯 Your Goals</h3>
+      <textarea id="goal-pad" placeholder="Write your goals..."></textarea>
+      <button onclick="saveGoals()">Save</button>
+    </div>
+  </div>
+
+  <!-- Schedule Toggle -->
+  <div id="schedule-toggle" onclick="toggleSchedule()">➤</div>
+
+<div id="schedule-panel" style="left: -300px; position: fixed; top: 0; bottom: 0; width: 300px; background: #222; color: #eee; padding: 15px; overflow-y: auto; transition: left 0.3s ease;">
+  <h3>📅 Your Schedule</h3>
+
+  <!-- Toggle buttons -->
+  <div style="margin-bottom: 15px;">
+    <button id="btn-halfday" onclick="showHalfDay()" style="margin-right: 10px;">Half Day</button>
+    <button id="btn-fullday" onclick="showFullDay()">Full Day</button>
+  </div>
+
+  <!-- Half Day Timetable -->
+  <table id="half-day-table" border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse; color: #eee; text-align: center; font-family: Arial, sans-serif;">
+    <thead style="background-color: #4a90e2; color: white;">
+      <tr>
+        <th>Period</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Math</td><td>English</td><td>English</td><td>Hindi</td><td>Math</td><td>General</td></tr>
+      <tr><td>2</td><td>English</td><td>Hindi</td><td>Hindi</td><td>Physics/Chemistry</td><td>Hindi</td><td>English</td></tr>
+      <tr><td>3</td><td>Physics/Chemistry</td><td>Social Studies (SST)</td><td>Science</td><td>Science</td><td>Physics/Chemistry</td><td>Math</td></tr>
+      <tr><td>4</td><td>Social Studies (SST)</td><td>Math</td><td>Math</td><td>Math</td><td>Artificial Intelligence</td><td>Social Studies (SST)</td></tr>
+      <tr><td>5</td><td>Math</td><td>Science</td><td>Social Studies (SST)</td><td>Social Studies (SST)</td><td>Social Studies (SST)</td><td>Physics/Chemistry</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Full Day Timetable -->
+  <table id="full-day-table" border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse; color: #eee; text-align: center; font-family: Arial, sans-serif; display:none;">
+    <thead style="background-color: #4a90e2; color: white;">
+      <tr>
+        <th>Period</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="7" style="font-style: italic; color: #888;">Not Given</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
